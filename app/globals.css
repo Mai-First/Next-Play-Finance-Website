@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-figtree), -apple-system, "Segoe UI", sans-serif;
+  --font-hand: var(--font-caveat), cursive;
+
+  --color-ink: #121317;
+  --color-ink-soft: #5b5e66;
+  --color-ink-faint: #9da0a8;
+  --color-surface: #f7f7f9;
+  --color-surface-2: #f1f2f7;
+  --color-card: #f8f9fc;
+  --color-dark: #0e0f11;
+  --color-dark-card: #17191e;
+  --color-accent: #ff7a59;
+  --color-accent-soft: #fff0eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-white font-sans text-ink antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
