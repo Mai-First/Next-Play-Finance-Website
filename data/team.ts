@@ -10,6 +10,14 @@ export type TeamMember = {
   image?: string;
 };
 
+export type Partner = {
+  name: string;
+  initials: string;
+  tag: "Partner" | "Advisor";
+  title: string;
+  image?: string;
+};
+
 export const team = {
   eyebrow: "The team",
   headline: "Meet the Roster.",
@@ -21,6 +29,7 @@ export const team = {
       school: "Columbia University",
       major: "Financial Economics",
       bio: "Investment banking analyst. Previously built a financial literacy program for graduating high school seniors.",
+      image: "/team/josh-becher.jpg",
     },
     {
       name: "Quinn O'Malley",
@@ -29,6 +38,7 @@ export const team = {
       school: "SMU",
       major: "Economics & Statistics",
       bio: "Law firm intern. CEO & founder of a quantitative strategies licensing company.",
+      image: "/team/quinn-omalley.jpg",
     },
     {
       name: "Mai First",
@@ -37,6 +47,7 @@ export const team = {
       school: "Columbia University",
       major: "Data Science",
       bio: "Intern at an AI management company. Built curriculum for 5,000+ students. IBM certified.",
+      image: "/team/mai-first.jpg",
     },
     {
       name: "Rafa Snyder",
@@ -45,6 +56,45 @@ export const team = {
       school: "Wake Forest University",
       major: "Economics & Mathematics",
       bio: "Co-founder of a financial education club.",
+      image: "/team/rafa-snyder.jpg",
+    },
+    {
+      name: "Grayson Clemons",
+      initials: "GC",
+      role: "Chief of Business Development",
+      school: "Drexel University",
+      major: "Finance & Accounting",
+      bio: "Financial forecasting intern. 1/24 in the Drexel Finance Impact Competition.",
+      image: "/team/grayson-clemons.jpg",
     },
   ] satisfies TeamMember[],
+
+  // TODO(Mai): temporary placeholder partners/advisors — replace with
+  // confirmed names, titles, and permission to list them before launch.
+  partners: [
+    {
+      name: "Jay Cannel",
+      initials: "JC",
+      tag: "Partner",
+      title: "Wells Fargo",
+    },
+    {
+      name: "Professor X",
+      initials: "PX",
+      tag: "Advisor",
+      title: "Professor",
+    },
+    {
+      name: "Athlete X",
+      initials: "AX",
+      tag: "Advisor",
+      title: "Athlete",
+    },
+    {
+      name: "Sharks President",
+      initials: "SP",
+      tag: "Advisor",
+      title: "President, Sharks",
+    },
+  ] as Partner[],
 };

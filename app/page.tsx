@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import JoinMission from "@/components/JoinMission";
 import MissionReveal from "@/components/MissionReveal";
 import Nav from "@/components/Nav";
-import OpportunityGrid from "@/components/OpportunityGrid";
 import ProblemStats from "@/components/ProblemStats";
 import TeamRoster from "@/components/TeamRoster";
 
@@ -16,7 +15,6 @@ export default function Home() {
       <Nav />
       <Hero />
       <ProblemStats />
-      <OpportunityGrid />
       <CurriculumCards />
       <MissionReveal />
       <TeamRoster />

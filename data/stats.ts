@@ -29,6 +29,8 @@ export const problem = {
   sources: "Sources: Merrill Lynch 2025 · NCPA Athlete Survey 2024",
 };
 
+// Currently unpublished — the Opportunity section was removed from the page
+// (July 2026). Data kept here with its sources in case the section returns.
 export const opportunity = {
   eyebrow: "The opportunity",
   headlineLines: ["The market is here.", "Nobody is serving it yet."],

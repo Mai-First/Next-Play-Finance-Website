@@ -64,7 +64,30 @@ export default function ContactSection() {
             Schools, coaches, advisors, athletes, parents — if you want financial
             literacy to arrive before the first deal, we want to hear from you.
           </p>
-          <p className="mt-6 text-[15px] text-ink-soft">
+          <a
+            href={
+              site.bookCallUrl ||
+              `mailto:${site.email}?subject=${encodeURIComponent("Intro call — Next Play Finance")}`
+            }
+            {...(site.bookCallUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-3.5 text-[16px] font-medium text-white transition-transform hover:scale-[1.03] active:scale-[0.98]"
+          >
+            <svg
+              aria-hidden
+              viewBox="0 0 20 20"
+              className="h-[18px] w-[18px]"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2.5" y="4" width="15" height="13.5" rx="2.5" />
+              <path d="M2.5 8.5h15M6.5 2.5V5M13.5 2.5V5" />
+            </svg>
+            Book an intro call
+          </a>
+          <p className="mt-5 text-[15px] text-ink-soft">
             Prefer email?{" "}
             <a href={`mailto:${site.email}`} className="font-medium text-ink underline decoration-accent decoration-2 underline-offset-4">
               {site.email}

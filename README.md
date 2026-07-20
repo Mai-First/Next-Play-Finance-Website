@@ -62,5 +62,5 @@ All pinned/scrub effects collapse to simple fades under `prefers-reduced-motion`
 - [ ] Set the production domain in `data/site.ts` (`url`)
 - [ ] Add real social links in `data/site.ts` (empty = icon hidden)
 - [ ] Configure contact form delivery (env vars on Vercel)
-- [ ] Team photos: add `/public/team/*.jpg` and wire `image` in `data/team.ts` (initials show until then)
+- [x] Team photos: added in `/public/team/` and wired in `data/team.ts` (Grayson's is a low-res crop from the team slide — swap in his original headshot when available; partner/advisor cards still show initials)
 - [ ] Real logo/wordmark if one exists (currently a text wordmark)
